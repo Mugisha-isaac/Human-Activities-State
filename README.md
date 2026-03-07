@@ -12,39 +12,28 @@ Activity recognition from wearable sensors is a fundamental capability with appl
 
 ```
 Human-Activities-State/
-├── README.md
-├── Team_Task_Sheet_HMM_Group28.pdf       # Project task specifications
+├── README.md                                 # Project documentation
+├── LICENSE                                   # MIT License
+├── requirements.txt                          # Python dependencies
+├── .gitignore                                # Git ignore rules
+├── Team_Task_Sheet_HMM_Group28.pdf           # Project task specifications
 ├── notebooks/
-│   └── activity_recognition_hmm.ipynb    # Main analysis notebook
+│   └── activity_recognition_hmm.ipynb        # Main analysis notebook
 ├── data/
-│   ├── train/                            # Training data organized by activity
-│   │   ├── jumping/
-│   │   │   ├── Jumping_1-2026-03-04_18-58-48_combined.csv
-│   │   │   ├── Jumping_2-2026-03-04_18-58-33_combined.csv
-│   │   │   └── ... (5 jumping files)
-│   │   ├── standing_waist/
-│   │   │   ├── standing_waist_1-2026-03-04_18-33-20_combined.csv
-│   │   │   ├── standing_waist_2-2026-03-04_18-36-33_combined.csv
-│   │   │   └── ... (8 standing files)
-│   │   ├── still/
-│   │   │   ├── still_1-2026-03-04_19-02-59_combined.csv
-│   │   │   ├── still_2-2026-03-04_19-02-23_combined.csv
-│   │   │   └── ... (5 still files)
-│   │   └── walking/
-│   │       ├── walking_1-2026-03-04_18-52-57_combined.csv
-│   │       ├── walking_2-2026-03-04_18-52-35_combined.csv
-│   │       └── ... (5 walking files)
-│   └── test/                             # Test data for unbiased evaluation
-│       ├── Jumping_*.csv
-│       ├── standing_waist_*.csv
-│       ├── still_*.csv
-│       └── walking_*.csv
-└── results/                              # Generated visualizations
-    ├── confusion_matrix.png              # Classification performance matrix
-    ├── per_activity_metrics.png          # Precision, recall, F1-score charts
-    ├── hmm_transition_matrices.png       # Learned temporal transition patterns
-    ├── sensitivity_specificity.png       # Detection capability analysis
-    └── decoded_activity_sequences.png    # Example predictions on test data
+│   ├── train/                                # Training data (62 files)
+│   │   ├── jumping/                          # 15 jumping recordings
+│   │   ├── standing_waist/                   # 17 standing recordings
+│   │   ├── still/                            # 15 still recordings
+│   │   └── walking/                          # 15 walking recordings
+│   └── test/                                 # Test data (5 files)
+│       ├── setB_Jumping_*.csv                # 3 jumping test recordings
+│       └── setB_Standing_*.csv               # 2 standing test recordings
+└── results/                                  # Generated visualizations
+    ├── confusion_matrix.png
+    ├── per_activity_metrics.png
+    ├── hmm_transition_matrices.png
+    ├── sensitivity_specificity.png
+    └── decoded_activity_sequences.png
 ```
 
 ## Dataset Description
