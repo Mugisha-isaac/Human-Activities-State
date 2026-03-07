@@ -149,22 +149,35 @@ For each test sequence X = (x_1, x_2, ..., x_T):
 ## Getting Started
 
 ### Prerequisites
-- Python 3.8+
-- NumPy
-- SciPy
-- pandas
-- matplotlib
-- Scikit-learn or hmmlearn
+- Python 3.8 or higher
+- pip package manager
+- Git
 
 ### Installation
 
+1. **Clone the repository:**
 ```bash
-pip install numpy scipy pandas matplotlib scikit-learn hmmlearn
+git clone https://github.com/Mugisha-isaac/Human-Activities-State.git
+cd Human-Activities-State
 ```
 
-### Basic Usage
+2. **Create and activate a virtual environment:**
+```bash
+python -m venv .venv
 
-Run the complete analysis pipeline in the Jupyter notebook:
+# On Windows
+.venv\Scripts\activate
+
+# On macOS/Linux
+source .venv/bin/activate
+```
+
+3. **Install dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+### Running the Notebook
 
 ```bash
 jupyter notebook notebooks/activity_recognition_hmm.ipynb
