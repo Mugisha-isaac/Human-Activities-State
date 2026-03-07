@@ -52,14 +52,14 @@ Human-Activities-State/
 The dataset is split into **training** and **test** sets organized by activity class:
 
 **Training Data** (`data/train/`):
-- **Jumping** (15 sequences, 351 windows): Multiple recordings across 2026-03-04 and 2026-03-07
-- **Standing** (17 sequences, 428 windows): Multiple recordings across 2026-03-04 and 2026-03-07
-- **Still** (13 sequences, 320 windows): Multiple recordings across 2026-03-04
-- **Walking** (13 sequences, 320 windows): Multiple recordings across 2026-03-04
+- **Jumping** (15 sequences): 5 original + 10 additional recordings from 2026-03-04 and 2026-03-07
+- **Standing** (17 sequences): 7 original + 10 additional recordings from 2026-03-04 and 2026-03-07
+- **Still** (15 sequences): 5 original + 10 additional recordings from 2026-03-04 and 2026-03-07
+- **Walking** (15 sequences): 5 original + 10 additional recordings from 2026-03-04 and 2026-03-07
 
 **Test Data** (`data/test/`):
-- **Jumping**: 3 files, 133 windows
-- **Standing**: 2 files, 115 windows
+- **Jumping**: 3 files (setB recordings from 2025-10-24)
+- **Standing**: 2 files (setB recordings from 2025-10-26)
 - Files from test activities in a flat folder structure
 - Used for unbiased model evaluation without temporal data leakage
 
