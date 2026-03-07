@@ -58,7 +58,16 @@ Each CSV file contains:
 - Timestamp information
 - Sampling rate metadata
 
-**Total Dataset:** 58 training sequences + 5 test sequences across 4 activities with 1,667 total windows of sensor data
+**Total Dataset:** 62 training sequences + 5 test sequences across 4 activities
+
+### Data Collection
+
+Sensor data was recorded using the **Sensor Logger** mobile application on Android smartphones. Each recording captures synchronized accelerometer and gyroscope readings at approximately **100 Hz** sampling rate. The phone was placed in a consistent position (waist-level pocket) across all recordings to minimise sensor placement variability.
+
+- **Recording duration:** ~10 seconds per session
+- **Sensor axes:** 3-axis accelerometer (m/s²) + 3-axis gyroscope (rad/s)
+- **Data format:** CSV with columns for timestamp, accelerometer (x, y, z), and gyroscope (x, y, z)
+- **Preprocessing:** Raw sensor exports were merged into combined CSV files per recording
 
 ## Methodology
 
