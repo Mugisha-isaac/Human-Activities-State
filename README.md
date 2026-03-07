@@ -437,6 +437,13 @@ The final submission includes:
    - 12 concrete future improvement suggestions
    - References to key design improvements over naive baselines
 
+## Contributors
+
+| Name | Role | Contributions |
+|------|------|---------------|
+| **Mugisha Isaac** | Lead Developer | HMM implementation, Baum-Welch/Viterbi algorithms, model training pipeline, initial data collection |
+| **Michael Musembi** | Data & Evaluation | Additional sensor data collection (40 recordings), evaluation framework, documentation, repo maintenance |
+
 ## References
 
 - Additional documentation on Hidden Markov Models
